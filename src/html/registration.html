@@ -41,28 +41,39 @@
         </div>
       </nav>
       <hr />
-      <h1>Welcome to our community</h1>
+      <h1 class="text-center">Register to be a part of our community!</h1>
       <hr />
-      <div class="container">
-        <div class="alert alert-primary">
-          Create account to stay connected with us.
-        </div>
-      </div>
-      <!-- <div class="container mt-5">
-        <form class="shadow-lg padding-2">
+
+      <div class="container mt-5">
+        <form
+          method="post"
+          action="/registration"
+          enctype="application/x-www-form-urlencoded"
+          class="shadow-lg p-3 rounded"
+        >
+          <h3>Register now!</h3>
+          <hr />
+          <div class="mb-3 padding -2">
+            <label for="exampleInputName1" class="form-label">Name</label>
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="exampleInputName"
+              aria-describedby="nameHelp"
+            />
+          </div>
           <div class="mb-3 padding -2">
             <label for="exampleInputEmail1" class="form-label"
               >Email address</label
             >
             <input
               type="email"
+              name="email"
               class="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
-            <div id="emailHelp" class="form-text">
-              We'll never share your email with anyone else.
-            </div>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label"
@@ -70,23 +81,17 @@
             >
             <input
               type="password"
+              name="password"
               class="form-control"
               id="exampleInputPassword1"
             />
           </div>
-          <div class="mb-3 form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1"
-              >Check me out</label
-            >
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-      </div> -->
+      </div>
     </div>
   </body>
 </html>
